@@ -15,7 +15,7 @@
     
         <script>
             
-            function rotatemenu() {
+            function rotateMenu() {
                 
                 var w = window.innerWidth;
                 var h = window.innerHeight;
@@ -26,6 +26,11 @@
                 } else {
                     window.alert("too wide");
                 }
+             
+            window.onresize = function() {
+                rotateMenu();
+                }
+            
         
         </script>
 
@@ -132,7 +137,7 @@
 
     </head>
 
-    <body style="background-color:lightgrey;" onload="rotatemenu()">
+    <body style="background-color:lightgrey;">
 
         <div class="sidebar">
 
