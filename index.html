@@ -19,7 +19,7 @@
             var h = window.innerHeight;
             var s = h/w;
             
-            window.onload = function rotatemenu() {
+            function rotatemenu() {
                 
                 if (s < 0.83935242839) {
                     window.alert("too thin");
@@ -133,7 +133,7 @@
 
     </head>
 
-    <body style="background-color:lightgrey;">
+    <body style="background-color:lightgrey;" onload="rotatemenu()">
 
         <div class="sidebar">
 
