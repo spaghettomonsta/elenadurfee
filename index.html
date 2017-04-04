@@ -15,19 +15,20 @@
     
         <script>
             
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var s = h/w;
+            
             function rotateMenu() {
-                
-                var w = window.innerWidth;
-                var h = window.innerHeight;
-                var s = h/w;
-                
+                               
                 if (s < 0.83935242839) {
                     window.alert("too thin");
                 } else {
                     window.alert("too wide");
                 }
             }
-             
+            
+            console.log(w,h);
             window.onresize = rotatemenu();
             
         
