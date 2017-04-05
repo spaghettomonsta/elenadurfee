@@ -19,14 +19,19 @@
             var w = window.innerWidth;
             var h = window.innerHeight;
             var s = h/w;
+            var rotated = 0;
             
             function rotateMenu() {
                                
                 if (s > 0.81808158765) {
+                    if (rotated = 0) {
                     window.alert("too thin");
                     
-                } else {
-                    window.alert("too wide");
+                    rotated = 1;
+                    } 
+                }
+                else {
+                        window.alert("too wide");
                 }
             }
             
