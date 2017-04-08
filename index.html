@@ -9,39 +9,43 @@
 
     <head>
 
-        <meta charset="utf-8">	
+        <!-- the leaf color's hex code is: #93D577!-->
+
+        <meta charset="utf-8">
         <meta name="description" content="Elena Durfee's practice html website.">
         <title>elenadurfee.com</title>
-    
-        <script>
+
+        <!--<script>
             var menutext = document.getElementById("rotatingmenu");
             var menustyle = window.getComputedStyle(menutext, null);
             var w = window.innerWidth;
             var h = window.innerHeight;
             var s = h/w;
             var rotated = 0;
-            
+
             function rotateMenu() {
-                               
+
                 if (s > 0.81808158765) {
                     if (rotated = 0) {
                     window.alert("too thin");
-                    
-                    
-                        
+
+
+
                     rotated = 1;
-                    } 
+                    }
                 }
                 else {
                         window.alert("too wide");
                 }
             }
-            
+
             console.log(w,h);
             window.onresize = rotateMenu();
-            
-        
-        </script>
+
+
+        </script>  !-->
+
+        <link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
 
         <style = "text/css">
 
@@ -66,7 +70,7 @@
                 top: 0;
                 left: 10vw;
                 z-index: -50;
-                box-shadow: 0vmin 0.5vmin 0.5vmin grey;
+            /*    box-shadow: 0vmin 0.5vmin 0.5vmin grey;*/
 
             }
 
@@ -77,14 +81,15 @@
             }
 
             .elenadurfee{
-                color: gray;
+                color: white;
                 font-size: 7vmin;
                 font-style: normal;
                 font-family: "Courier New", Courier, monospace;
                 position: relative;
                 text-align:center;
                 top: 3vh;
-                text-decoration: none;
+                z-index: 999;
+                text-decoration: line-through;
             }
 
             .paragraphs{
@@ -188,7 +193,7 @@
                 Cessa decipere humanas creaturas,
                 eisque aeternae Perditionis venenum propinare.<br> <br>
                 Ut Ecclesiam tuam secura tibi facias libertate servire
-                te rogamus, audi nos.</p>   
+                te rogamus, audi nos.</p>
 
             </div>
 
