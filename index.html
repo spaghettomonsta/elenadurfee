@@ -1,241 +1,213 @@
-
-
-
-
-
-
 <DOCTYPE! html>
 <html>
-
-    <head>
-
-        <!-- the leaf color's hex code is: #93D577!-->
-
-        <meta charset="utf-8">
-        <meta name="description" content="Elena Durfee's practice html website.">
-        <title>elenadurfee.com</title>
-
-        <!--<script>
-            var menutext = document.getElementById("rotatingmenu");
-            var menustyle = window.getComputedStyle(menutext, null);
-            var w = window.innerWidth;
-            var h = window.innerHeight;
-            var s = h/w;
-            var rotated = 0;
-
-            function rotateMenu() {
-
-                if (s > 0.81808158765) {
-                    if (rotated = 0) {
-                    window.alert("too thin");
-
-
-
-                    rotated = 1;
-                    }
-                }
-                else {
-                        window.alert("too wide");
-                }
-            }
-
-            console.log(w,h);
-            window.onresize = rotateMenu();
-
-
-        </script>  !-->
-
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-
-        <style = "text/css">
-
-
-            .sidebar{
-                width: 10vw;
-                height: 100%;
-                background-color: white;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-                z-index: -10;
-                box-shadow: 0.5vmin 0vmin 0.5vmin grey;
-
-            }
-
-            .header{
-                width:90vw;
-                height:10%;
-                background-color:white;
-                position: absolute;
-                top: 0;
-                left: 10vw;
-                z-index: -50;
-            /*    box-shadow: 0vmin 0.5vmin 0.5vmin grey;*/
-
-            }
-
-
-            }
-            body{
-                background-color: lightgray;
-            }
-
-            .elenadurfee{
-                color: white;
-                font-size: 7vmin;
-                font-style: normal;
-                font-family: "Courier New", Courier, monospace;
-                position: relative;
-                text-align:center;
-                top: 3vh;
-                z-index: 999;
-                text-decoration: line-through;
-            }
-
-            .paragraphs{
-                position: absolute;
-                top: 13vh;
-                width:80vw;
-                left: 14.5vw;
-                z-index: -99;
-
-
-            }
-
-            .par1{
-              color: grey;
-            font-size: 3vh;
-              background-color:white;
-              z-index: -99;
-              border: 5vmin solid white;
-              box-shadow: 0.5vmin 0.5vmin 0.5vmin grey;
-
-            }
-
-            .break{
-              height: 2vh;
-            }
-
-            .footer{
-              width: 80%;
-              z-index: -99;
-              height: 25vh;
-
-            }
-
-            .menu{
-              width: 100%;
-              z-index: 99;
-              height: 100%;
-              text-align: center;
-              font-size: 4vmin;
-              color: grey;
-              cursor: pointer;
-
-            }
-
-            }
-
-        </style>
-
+  <head>
+    <!-- the leaf color's hex code is: #93D577!-->
+    <meta charset="utf-8">
+    <meta name="description" content="Elena Durfee's practice html website.">
+    <title>elenadurfee.com</title>
+    <!--<script>
+      var menutext = document.getElementById("rotatingmenu");
+      var menustyle = window.getComputedStyle(menutext, null);
+      var w = window.innerWidth;
+      var rotated = 0;
+      function rotateMenu() {
+        if (s > 0.81808158765) {
+          if (rotated = 0) {
+            window.alert("too thin");
+            rotated = 1;
+          }
+        }
+        else {
+          window.alert("too wide");
+        }
+      }
+      console.log(w,h);
+      window.onresize = rotateMenu();
+    </script>  !-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Parisienne" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <style = "text/css">
+      .sidebar{
+        width: 10vw;
+        font-family: 'Crimson Text', serif;
+        height: 100%;
+        background: repeating-linear-gradient(
+          90deg,
+          white,
+          white 10px,
+          #e7efe3 10px,
+          #e7efe3 20px
+        );
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -10;
+        box-shadow: 0.5vmin 0vmin 0.5vmin grey;
+      }
+      .header{
+        width:90%;
+        height:10%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -50;
+        /*    box-shadow: 0vmin 0.5vmin 0.5vmin grey;*/
+      }
+      body{
+        background-color: #E4E4E4;
+        background-image: url("background.png");
+        background-position: bottom;
+        background-size: 38%;
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+      }
+      input, button, submit{
+        border: none;
+      }
+      #elenadurfeebutton{
+        font-size: 6vmin;
+        width: 70%;
+        font-style: normal;
+        font-family: 'Parisienne', cursive;
+        color: white;
+        background-color: #93D577;
+        position: static;
+        right: 0;
+        border: 4px solid #93D577;
+        border-radius: 25px;
+        opacity: 1;
+      }
+      .paragraphs{
+        position: absolute;
+        top: 13vh;
+        right: 0;
+        width:90%;
+        margin: auto;
+        z-index: -99;
+        align-items: center;
+        font-family: 'Crimson Text', serif;
+      /*  background-color: blue;*/
+      }
+      .par1{
+        color: grey;
+        width: 80%;
+        font-size: 3vh;
+        background-color: rgba(255,255,255,0.6);
+        z-index: -99;
+        border: 5vmin solid rgba(255,255,255,0.5);
+        position: relative;
+        margin: auto;
+        overflow: auto;
+        align-self: center;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+      /*  box-shadow: 0.5vmin 0.5vmin 0.5vmin grey;*/
+      }
+      .break{
+        height: 2vh;
+      }
+      .footer{
+a        width: 80%;
+        z-index: -99;
+        height: 25vh;
+      }
+      .menu{
+        width: 100%;
+        z-index: 99;
+        height: 50%;
+        text-align: center;
+        font-size: 4vmin;
+        color: grey;
+        cursor: pointer;
+        padding-top: 20%;
+      }
+      .inside_menu{
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .inside_menu:hover{
+        text-shadow: 2px 2px lightgrey;
+      }
+    </style>
     </head>
-
-    <body style="background-color:lightgrey;">
-
-        <div class="sidebar">
-
-            <div class="menu" id="rotatingmenu" style="top:50%;">
-
-                <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;"><br>home<br></br></a>
-
-                <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">about<br></br></a>
-
-                <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">contact<br></br></a>
-
-                <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">my cat<br></br></a>
-
-            </div>
-
+    <body style="background-color:#E4E4E4;">
+      <div class="sidebar">
+        <div class="menu" id="rotatingmenu" style="top:50%;">
+          <div class="inside_menu">
+            <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;"><br>home<br></br></a>
+            <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">about<br></br></a>
+            <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">contact<br></br></a>
+            <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">my cat<br></br></a>
+          </div>
         </div>
-
-        <div class="header">
-            <div class="elenadurfee" style="text-decoration:none;">
-                <a href="https://elenadurfee.com" style="text-decoration:none;color:gray;">elenadurfee.com</a>
-            </div>
-        </div>
-
-        <div class="paragraphs">
-
-            <div class="par1" id="paragraph1">
-
-                <p>Exorcizamus te, omnis immundus spiritus
-                omnis satanica potestas, omnis incursio
-                infernalis adversarii, omnis legio,
-                omnis congregatio et secta diabolica.<br> <br>
-                Ergo draco maledicte
-                et omnis legio diabolica adjuramus te.
-                cessa decipere humanas creaturas,
-                eisque aeternae Perditionis venenum propinare.<br> <br>
-                Vade, Satana, inventor et magister
-                omnis fallaciae, hostis humanae salutis.<br> <br>
-                Humiliare sub potenti manu dei,
-                contremisce et effuge, invocato a
-                nobis sancto et terribili nomine,
-                quem inferi tremunt.<br> <br>
-                Ab insidiis diaboli, libera nos, Domine.<br> <br>
-                Exorcizamus te, omnis immundus spiritus
-                omnis satanica potestas, omnis incursio
-                infernalis adversarii,omnis legio,
-                omnis congregatio et secta diabolica.<br> <br>
-                Ergo draco maledicte
-                et omnis legio diabolica
-                adjuramus te.<br> <br>
-                Cessa decipere humanas creaturas,
-                eisque aeternae Perditionis venenum propinare.<br> <br>
-                Ut Ecclesiam tuam secura tibi facias libertate servire
-                te rogamus, audi nos.</p>
-
-            </div>
-
-            <div class="break"></div>
-
-            <div class="par1" id="paragraph1">
-
-                <p>Exorcizamus te, omnis immundus spiritus
-                omnis satanica potestas, omnis incursio
-                infernalis adversarii, omnis legio,
-                omnis congregatio et secta diabolica.<br> <br>
-                Ergo draco maledicte
-                et omnis legio diabolica adjuramus te.
-                cessa decipere humanas creaturas,
-                eisque aeternae Perditionis venenum propinare.<br> <br>
-                Vade, Satana, inventor et magister
-                omnis fallaciae, hostis humanae salutis.<br> <br>
-                Humiliare sub potenti manu dei,
-                contremisce et effuge, invocato a
-                nobis sancto et terribili nomine,
-                quem inferi tremunt.<br> <br>
-                Ab insidiis diaboli, libera nos, Domine.<br> <br>
-                Exorcizamus te, omnis immundus spiritus
-                omnis satanica potestas, omnis incursio
-                infernalis adversarii,omnis legio,
-                omnis congregatio et secta diabolica.<br> <br>
-                Ergo draco maledicte
-                et omnis legio diabolica
-                adjuramus te.<br> <br>
-                Cessa decipere humanas creaturas,
-                eisque aeternae Perditionis venenum propinare.<br> <br>
-                Ut Ecclesiam tuam secura tibi facias libertate servire
-                te rogamus, audi nos.</p>
-
-            </div>
-
-            <div class="footer"></div>
-
-        </div>
-
+      </div>
+      <div class="header">
+        <button id="elenadurfeebutton" href="https://elenadurfee.com">elenadurfee.com <img src="head.png" style="height:8vmin;vertical-align:bottom;"></button>
+      </div>
+      <div class="paragraphs">
+        <div class="par1" id="paragraph1">
+          <p>Exorcizamus te, omnis immundus spiritus
+          omnis satanica potestas, omnis incursio
+          infernalis adversarii, omnis legio,
+          omnis congregatio et secta diabolica.<br> <br>
+          Ergo draco maledicte
+          et omnis legio diabolica adjuramus te.
+          cessa decipere humanas creaturas,
+          eisque aeternae Perditionis venenum propinare.<br> <br>
+          Vade, Satana, inventor et magister
+          omnis fallaciae, hostis humanae salutis.<br> <br>
+          Humiliare sub potenti manu dei,
+          contremisce et effuge, invocato a
+          nobis sancto et terribili nomine,
+          quem inferi tremunt.<br> <br>
+          Ab insidiis diaboli, libera nos, Domine.<br> <br>
+          Exorcizamus te, omnis immundus spiritus
+          omnis satanica potestas, omnis incursio
+          infernalis adversarii,omnis legio,
+          omnis congregatio et secta diabolica.<br> <br>
+          Ergo draco maledicte
+          et omnis legio diabolica
+          adjuramus te.<br> <br>
+          Cessa decipere humanas creaturas,
+          eisque aeternae Perditionis venenum propinare.<br> <br>
+          Ut Ecclesiam tuam secura tibi facias libertate servire
+          te rogamus, audi nos.
+        </p>
+      </div>
+      <div class="break"></div>
+        <div class="par1" id="paragraph2">
+          <p>Exorcizamus te, omnis immundus spiritus
+          omnis satanica potestas, omnis incursio
+          infernalis adversarii, omnis legio,
+          omnis congregatio et secta diabolica.<br> <br>
+          Ergo draco maledicte
+          et omnis legio diabolica adjuramus te.
+          cessa decipere humanas creaturas,
+          eisque aeternae Perditionis venenum propinare.<br> <br>
+          Vade, Satana, inventor et magister
+          omnis fallaciae, hostis humanae salutis.<br> <br>
+          Humiliare sub potenti manu dei,
+          contremisce et effuge, invocato a
+          nobis sancto et terribili nomine,
+          quem inferi tremunt.<br> <br>
+          Ab insidiis diaboli, libera nos, Domine.<br> <br>
+          Exorcizamus te, omnis immundus spirituss
+          omnis satanica potestas, omnis incursio
+          infernalis adversarii,omnis legio,
+          omnis congregatio et secta diabolica.<br> <br>
+          Ergo draco maledicte
+          et omnis legio diabolica
+          adjuramus te.<br> <br>
+          Cessa decipere humanas creaturas,
+          eisque aeternae Perditionis venenum propinare.<br> <br>
+          Ut Ecclesiam tuam secura tibi facias libertate servire
+          te rogamus, audi nos.
+          </p>
+          </div>
+          <div class="footer"></div>
+          </div>
         <img src="robotgirl2.png" alt="robot girl" style="width:80vmin;z-index:20;position:fixed;bottom:0;left:0;">
-
-    </body>
-
+      </body>
 </html>
