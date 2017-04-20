@@ -39,21 +39,21 @@
         border: none;
       }
       .sidebar{
-        width: 10vw;
+        width: 9.5vw;
         font-family: 'Crimson Text', serif;
         height: 100%;
         background: repeating-linear-gradient(
           90deg,
-          white,
-          white 0.75vw,
-          #e7efe3 0.75vw,
-          #e7efe3 1.5vw
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0) 1vw,
+          #93D577 0.5vw,
+          #93D577 1.25vw
         );
         position: fixed;
         top: 0px;
         left: 0px;
         z-index: -10;
-        box-shadow: 0.25vmin 0vmin 0.25vmin grey;
+        /*box-shadow: 0.25vmin 0vmin 0.25vmin grey;*/
       }
       .header{
         width:90%;
@@ -140,17 +140,17 @@
       .menubutton{
         font-family: 'Crimson Text', serif;
         font-size: 3.5vmin;
-        background-color: #e7efe3;
-        border-radius: 10px;
-        width: 8vw;
+        background-color: #93D577;
+        /*border-radius: 10px;*/
+        width: 7.5vw;
         height: 7vh;
         margin-top: 2vw;
         text-align: center;
         background-repeat: no-repeat;
         cursor: pointer;
         overflow: hidden;
-        outline: none;
-        border: none;
+        text-decoration:none;
+        color:white;
       }
       .menubutton:hover{
         border-width: 4px;
@@ -167,10 +167,10 @@
         <div class="menu" id="rotatingmenu" style="top:50%;">
           <div class="inside_menu">
             <nav>
-              <button class="menubutton" href="https://elenadurfee.com" style="text-decoration:none;color:gray;cursor:pointer;">home</button>
-              <button class="menubutton" href="https://elenadurfee.com" style="text-decoration:none;color:gray;cursor:pointer;">about</button>
-              <button class="menubutton" href="https://elenadurfee.com" style="text-decoration:none;color:gray;cursor:pointer;">contact</button>
-              <button class="menubutton" href="https://elenadurfee.com" style="text-decoration:none;color:gray;cursor:pointer;">my cat</button>
+              <button class="menubutton" href="https://elenadurfee.com">home</button>
+              <button class="menubutton" href="https://elenadurfee.com">about</button>
+              <button class="menubutton" href="https://elenadurfee.com">contact</button>
+              <button class="menubutton" href="https://elenadurfee.com">my cat</button>
             </nav>
           </div>
         </div>
