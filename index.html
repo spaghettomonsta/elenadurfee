@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- the leaf color's hex code is: #93D577!-->
@@ -34,9 +34,6 @@
         background-size: 38%;
         background-repeat: repeat-x;
         background-attachment: fixed;
-      }
-      input, button, submit{
-        border: none;
       }
       .sidebar{
         width: 9.5vw;
@@ -123,25 +120,16 @@
         width: 100%;
         z-index: 99;
         height: 50%;
+        left: 2px;
         text-align: center;
         font-size: 4vmin;
         color: grey;
         padding-top: 20%;
       }
-      /*.inside_menu{
-        width: 100%;
-        height: 100%;
-        vertical-align: middle;
-        font-family: 'Crimson Text', serif;
-      }
-      .inside_menu:hover{
-        text-shadow: 2px 2px lightgrey;
-      } */
       .menubutton{
         font-family: 'Crimson Text', serif;
         font-size: 3.5vmin;
         background-color: #93D577;
-        /*border-radius: 10px;*/
         width: 7.5vw;
         height: 7vh;
         margin-top: 2vw;
@@ -151,11 +139,15 @@
         overflow: hidden;
         text-decoration:none;
         color:white;
+        border-style: solid;
+        border-color: #93D577;
+        transition: 1s;
       }
       .menubutton:hover{
-        border-width: 4px;
-        border-color: blue;
+        border-left-width: 13px;
+        //border-left-color: #76b25c;
         border-style: solid;
+        transition: 1s;
       }
     </style>
     </head>
@@ -165,14 +157,12 @@
       </div>
       <div class="sidebar">
         <div class="menu" id="rotatingmenu" style="top:50%;">
-          <div class="inside_menu">
-            <nav>
-              <button class="menubutton" href="https://elenadurfee.com">home</button>
-              <button class="menubutton" href="https://elenadurfee.com">about</button>
-              <button class="menubutton" href="https://elenadurfee.com">contact</button>
-              <button class="menubutton" href="https://elenadurfee.com">my cat</button>
-            </nav>
-          </div>
+          <nav>
+            <button class="menubutton" href="https://elenadurfee.com">home</button>
+            <button class="menubutton" href="https://elenadurfee.com">about</button>
+            <button class="menubutton" href="https://elenadurfee.com">contact</button>
+            <button class="menubutton" href="https://elenadurfee.com">my cat</button>
+          </nav>
         </div>
       </div>
       <div class="paragraphs"><section>
@@ -240,6 +230,6 @@
         <div class="footer"></div>
         </section>
       </div>
-    <img src="robotgirl2.png" alt="robot girl" style="width:80vmin;z-index:20;position:fixed;bottom:0;left:0;">
+    <img src="robotgirl.png" alt="robot girl" style="width:60vmin;z-index:20;position:fixed;bottom:0;left:0;">
   </body>
 </html>
