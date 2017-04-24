@@ -5,27 +5,6 @@
     <meta charset="utf-8">
     <meta name="description" content="Elena Durfee's practice html website.">
     <title>elenadurfee.com</title>
-    <script>
-      var menutext = document.getElementById("rotatingmenu");
-      var menustyle = window.getComputedStyle(menutext, null);
-      var w = window.innerWidth;
-      var h = window.innerHeight;
-      var s = w/h;
-      var rotated = 0;
-      function rotateMenu() {
-        if (s > 1) {
-          if (rotated = 0) {
-            window.alert("too thin");
-            rotated = 1;
-          }
-        }
-        else {
-          window.alert("too wide");
-        }
-      }
-      console.log(w,h);
-      window.onresize = rotateMenu();
-    </script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Parisienne" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <style = "text/css">
@@ -229,4 +208,26 @@
       </div>
     <img src="robotgirl.png" alt="robot girl" style="width:60vmin;z-index:20;position:fixed;bottom:0;left:0;">
   </body>
+
+  <script>
+    var menutext = document.getElementById("rotatingmenu");
+    var menustyle = window.getComputedStyle(menutext, null);
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var s = w/h;
+    var rotated = 0;
+    function rotateMenu() {
+      if (s > 1) {
+        if (rotated = 0) {
+          window.alert("too thin");
+          rotated = 1;
+        }
+      }
+      else {
+        window.alert("too wide");
+      }
+    }
+    console.log(w,h);
+    window.onresize = rotateMenu();
+  </script>
 </html>
