@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta name="description" content="Elena Durfee's practice html website.">
     <title>elenadurfee.com</title>
-    <!--<script>
+    <script>
       var menutext = document.getElementById("rotatingmenu");
       var menustyle = window.getComputedStyle(menutext, null);
       var w = window.innerWidth;
+      var h = window.innerHeight;
+      var s = w/h;
       var rotated = 0;
       function rotateMenu() {
-        if (s > 0.81808158765) {
+        if (s > 1) {
           if (rotated = 0) {
             window.alert("too thin");
             rotated = 1;
@@ -23,9 +25,9 @@
       }
       console.log(w,h);
       window.onresize = rotateMenu();
-    </script>  !-->
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Parisienne" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
     <style = "text/css">
       body{
         background-color: #E4E4E4;
@@ -50,17 +52,14 @@
         top: 0px;
         left: 0px;
         z-index: -10;
-        /*box-shadow: 0.25vmin 0vmin 0.25vmin grey;*/
       }
       .header{
         width:90%;
-        /*height:10%;*/
         position: absolute;
         top: 0px;
         right: 0px;
         text-align: center;
         z-index: -50;
-        /*    box-shadow: 0vmin 0.5vmin 0.5vmin grey;*/
       }
       #elenadurfeebutton{
         font-size: 7vmin;
@@ -87,7 +86,6 @@
         z-index: -99;
         align-items: center;
         font-family: 'Crimson Text', serif;
-      /*  background-color: blue;*/
       }
       .par1{
         color: grey;
@@ -103,7 +101,6 @@
         align-items: center;
         padding-left: 2%;
         padding-right: 2%;
-      /*  box-shadow: 0.5vmin 0.5vmin 0.5vmin grey;*/
       }
       .paragraphheader{
         font-size: 4vh;
@@ -128,7 +125,7 @@
       }
       .menubutton{
         font-family: 'Crimson Text', serif;
-        font-size: 3.5vmin;
+        font-size: 3vmin;
         background-color: #93D577;
         width: 7.5vw;
         height: 7vh;
@@ -144,7 +141,7 @@
         transition: 0.5s;
       }
       .menubutton:hover{
-        border-left-width: 13px;
+        border-left-width: 1.5vw;
         //border-left-color: #76b25c;
         border-style: solid;
         transition: 0.5s;
