@@ -117,13 +117,15 @@
         color:white;
         border-style: solid;
         border-color: #93D577;
-        transition: 0.5s;
       }
       .menubutton:hover{
         border-left-width: 1.5vw;
-        //border-left-color: #76b25c;
+        border-left-color: #76b25c;
         border-style: solid;
-        transition: 0.5s;
+        transition: all 0.5s ease;
+      }
+      .menubutton.mobile{
+        transition: all 0.5s ease-out;
       }
     </style>
     </head>
@@ -217,8 +219,8 @@
     var s = w/h;
     var rotated = 0;
     function rotateMenu() {
-      if (s > 1) {
-        if (rotated = 0) {
+      if (s < 1.58310626703) {
+        if (rotated === 0) {
           window.alert("too thin");
           rotated = 1;
         }
@@ -226,9 +228,22 @@
       else {
         window.alert("too wide");
       }
-      window.alert("javascript sucks!");
     }
     console.log(w,h);
     window.onload = rotateMenu();
+
+    //removing the animation on window resize
+    $(document).ready(function(){
+       window.onresize = resizePage;
+       resizePage();
+    });
+    function resizePage(){
+        var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+        if(width > 500){
+            $('nav').removeClass('mobile');
+        } else {
+            $('nav').addClass('mobile');
+        }
+    }
   </script>
 </html>
