@@ -1,0 +1,299 @@
+/*
+COLOR SCHEME:
+
+white
+black
+
+light blue: #acc6d5
+medium light blue: #80a4b7
+medium blue: #6e94ac
+dark blue: #2f485a
+really dark blue: #162835
+white
+*/
+
+/* adding fonts here */
+
+@font-face {
+  font-family: "Warsaw Gothic";
+  src: url('C://Users/Elena/Desktop/MASTER - The Global Good/website/resources/Fonts/warsawgothic.otf');
+}
+
+body {
+  background-color: #6e94ac;
+}
+.backhead {
+  width: 100%;
+}
+#header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  z-index: 10;
+}
+.left {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+	align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 30%;
+  background-color: white;
+}
+.logo {
+  height: 85%;
+  width: auto;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: flex;
+}
+.globalGoodLogo {
+  display: -webkit-flex;
+  display: block;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: flex;
+  object-fit: contain;
+  max-width: 95%;
+  max-height: 95%;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.right {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 70%;
+  background-color: white;
+}.partnerlogos {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: -10vw;
+  width: 30%;
+  height: 90%;
+}
+.siliconSlopesLogo {
+  content: url('siliconslopeslogo.png');
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  object-fit: contain;
+  max-width: 40%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  padding: 0.5vw;
+}
+.utosLogo {
+  content: url('utoslogo.png');
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  object-fit: contain;
+  max-height: 40%;
+  max-width: 50%;
+  height: auto;
+  width: auto;
+  padding: 0.5vw;
+}
+.cotopaxiLogo {
+  content: url('cotopaxilogo.png');
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  object-fit: contain;
+  max-height: 50%;
+  max-width: 50%;
+  height: auto;
+  width: auto;
+  padding: 0px;
+}
+.ircLogo {
+  content: url('irclogo.png');
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  object-fit: contain;
+  cursor: pointer;
+  max-width: 30%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  padding: 0.25vw;
+}
+.navbar {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  right: 1vw;
+  width: 23%;
+  height: 40%;
+  overflow: inherit;
+  font-size: 2.3vmin;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  text-decoration: none;
+  color: #2f485a;
+}
+.menulink {
+  color: #2f485a;
+  padding: 0.5vw;
+  transition: 0.25s;
+}
+.menulink:hover {
+  color: #80a4b7;
+  transition: 0.25s;
+}
+.donatebutton {
+  position: absolute;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  right: 0;
+  width: 17%;
+  height: 100%;
+  color: white;
+  background-color: #2f485a;
+  border: none;
+  font-size: 4vmin;
+  font-family: "Lucida Sans Unicode", sans-serif;
+}
+.content {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  top: 100px;
+  left: 0px;
+  /*just to get the page to scroll*/
+}
+.slideshow {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-content: center;
+  left: 0px;
+  width: 100%;
+  max-height: 85vh;
+}
+.imagesel{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+.mySlides {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+}
+.bannercontent {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+.bannercontent2 {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: #acc6d5;
+  color: #162835;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+h3 {
+  font-size: 20px;
+  color: #2f485a;
+}
+.blockcontent {
+  float: left;
+  position: relative;
+  margin: 30px;
+  padding: 30px;
+  padding-top: 10px;
+  border-left-width: 20px;
+  border-left-color: black;
+  width: 42%;
+  height: auto;
+  background-color: white;
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  left: 0px;
+  color: #6e94ac;
+}
