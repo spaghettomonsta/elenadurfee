@@ -22,6 +22,37 @@ white
 body {
   background-color: white;
 }
+
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+
+.noback {
+  background-color: rgba(0,0,0,0);
+}
+.noborder {
+  border: none;
+}
+
 .backhead {
   width: 100%;
 }
@@ -186,6 +217,7 @@ body {
   color: #2f485a;
   padding: 0.5vw;
   transition: 0.25s;
+  cursor: pointer;
 }
 .menulink:hover {
   color: #80a4b7;
@@ -207,6 +239,13 @@ body {
   border: none;
   font-size: 3.5vmin;
   font-family: "Lucida Sans Unicode", sans-serif;
+}
+.donatelink{
+  transition: 0.5s;
+}
+.donatelink:hover {
+  color: #2f485a;
+  transition: 0.5s;
 }
 .content {
   position: absolute;
@@ -289,6 +328,24 @@ body {
   font-size: 24px;
   box-sizing: border-box;
 }
+.bannercontent4 {
+  margin-top: 0px;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  color: white;
+  font-family: "Lucida Sans Unicode", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
 h3 {
   font-size: 20px;
   color: #2f485a;
@@ -342,7 +399,7 @@ h3 {
   height: auto;
   font-family: "Tahoma", sans-serif;
   font-size: 19px;
-  left: -5%;
+  left: 0;
   color: #80a4b7;
 }
 .div1 {
