@@ -16,7 +16,7 @@ white
 
 @font-face {
   font-family: "Warsaw Gothic";
-  src: url('C://Users/Elena/Desktop/MASTER - The Global Good/website/resources/Fonts/warsawgothic.otf');
+  src: url('/resources/Fonts/warsawgothic.otf');
 }
 
 body {
@@ -148,7 +148,7 @@ body {
   padding: 0.5vw;
 }
 .utosLogo {
-  content: url('utoslogo.png');
+  content: url('utoslogocolor.png');
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -161,10 +161,10 @@ body {
   max-width: 45%;
   height: auto;
   width: auto;
-  padding: 0.5vw;
+  margin-right: 1vw;
 }
 .cotopaxiLogo {
-  content: url('cotopaxilogo.png');
+  content: url('cotopaxilogocolor.png');
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -173,14 +173,13 @@ body {
   -webkit-justify-content: center;
   justify-content: center;
   object-fit: contain;
-  max-height: 50%;
+  max-height: 60%;
   max-width: 45%;
   height: auto;
   width: auto;
-  padding: 0px;
 }
 .ircLogo {
-  content: url('irclogo.png');
+  content: url('irclogocolor.png');
   position: relative;
   display: -webkit-flex;
   display: flex;
@@ -194,7 +193,7 @@ body {
   max-height: 60%;
   width: auto;
   height: auto;
-  padding: 0.25vw;
+  margin-left: 1vw;
 }
 .navbar {
   position: relative;
@@ -449,22 +448,22 @@ h3 {
   width: 13%;
 }
 .a {
-  background-image: url('C:/Users/Elena/Desktop/EDITS%20-%20The%20Global%20Good/website/resources/Images/coverimage-refugeecomputer.jpg');
+  background-image: url('/resources/Images/coverimage-refugeecomputer.jpg');
   width: 100%;
   height: 90%;
 }
 .b {
-  background-image: url('C:/Users/Elena/Desktop/EDITS%20-%20The%20Global%20Good/website/resources/Images/code.jpeg');
+  background-image: url('/resources/Images/code.jpeg');
   width: 100%;
   height: 90%;
 }
 .c {
-  background-image: url('C:/Users/Elena/Desktop/EDITS%20-%20The%20Global%20Good/website/resources/Images/circuitboard.jpeg');
+  background-image: url('/resources/Images/circuitboard.jpeg');
   width: 100%;
   height: 90%;
 }
 .d {
-  background-image: url('C:/Users/Elena/Desktop/EDITS%20-%20The%20Global%20Good/website/resources/Images/hardware.jpg');
+  background-image: url('/resources/Images/hardware.jpg');
   width: 100%;
   height: 90%;
 }
