@@ -14,11 +14,6 @@ white
 
 /* adding fonts here */
 
-@font-face {
-  font-family: "Warsaw Gothic";
-  src: url('/resources/Fonts/warsawgothic.otf');
-}
-
 body {
   background-color: white;
 }
@@ -238,6 +233,7 @@ body {
   border: none;
   font-size: 3.5vmin;
   font-family: "Lucida Sans Unicode", sans-serif;
+  text-decoration: none;
 }
 .donatelink{
   transition: 0.5s;
